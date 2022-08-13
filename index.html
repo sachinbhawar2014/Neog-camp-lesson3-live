@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachin's Component Library</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <h1>This is Sachin's Component Library</h1>
@@ -19,16 +20,19 @@
     <p> This is normal text</p>
     <small>This is smallest text that we can use in our website</small>
     <hr>
+
     <h2>#Container</h2>
     <h3>fluid container</h3>
-    <div>This is centered container and it will go till the specified width.</div>
+    <div class="container container-center">This is centered container and it will go till the specified width.</div>
+    
     <h2>#Links</h2>
-    <a href="https://www.google.com/">Google</a>
-    <a href="https://www.youtube.com/">YouTube</a>
+    <a class = "link link-primary active on-click" href="https://www.google.com/">Google</a>
+    <a class = "link link-secondary active on-click"  href="https://www.youtube.com/">YouTube</a>
     <hr>
+    
     <h2>#Lists</h2>
     <h3>Unordered List</h3>
-        <ul>
+        <ul class="list-no-bullets">
             <li>Item One</li>
             <li>Item two</li>
             <li>Item three</li>
@@ -48,6 +52,7 @@
        
     </ol>
     <hr>
+    
     <h2>#Nav</h2>
     <nav>
         <li>
@@ -61,6 +66,7 @@
         </li>
     </nav>
     <hr>
+    
     <h2>#Header</h2>
     <header>
         <img src="/img/myphoto.jpg" />
@@ -69,6 +75,7 @@
         <h2>Heading inside</h2>
     </header>
     <hr>
+    
     <h2>#Section</h2>
     <section>
         <h3>White section</h3>
@@ -79,6 +86,7 @@
         <p>This will have grey background</p>
     </section>
     <hr>
+    
     <h2>#footer</h2>
 <footer>
     <div>Some small heading inside the footer</div>
