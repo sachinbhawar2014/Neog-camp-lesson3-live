@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sachin's Component Library</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <!-- first way of doing css -->
+    <!-- <style>
+        body{
+            color:red;
+        }
+    </style> -->
+    <link href="/styles.css" rel="stylesheet styles.css">
 </head>
 <body>
-    <h1>This is Sachin's Component Library</h1>
+    <h1 id="lib-header">This is Sachin's Component Library</h1>
     <p>I am Sachin Bhawar. I am student of Neog.comp. I want to make a component Library.</p>
     
     <hr>    
@@ -17,28 +23,31 @@
     <h1>This is biggest Heading</h1>
     <h2>This is second biggest Heading</h2>
     <h3>This is third biggest Heading</h3>
-    <p> This is normal text. This paragaraph will have a <strong>bold</strong> text.</p>
+    <p> This is normal text</p>
     <small>This is smallest text that we can use in our website</small>
     <hr>
-
     <h2>#Container</h2>
     <h3>fluid container</h3>
-    <div class="container container-fluid">This is fluid container and it will go till the specified width.</div>
-    
+    <div class="container">This is centered container and it will go till the specified width.</div>
     <h3>Center container</h3>
-    <div class="container container-center">This is centered container and it will go till the specified width.</div>
+    <div class="container-center">This is centered container and it will go till the specified width.</div>
     
     <h2>#Links</h2>
-    <a class = "link link-primary active on-click" href="https://www.google.com/">Google</a>
-    <a class = "link link-secondary active on-click"  href="https://www.youtube.com/">YouTube</a>
+    <a class="link link-primary" href="https://www.google.com/">Google</a>
+    <a class="link link-secondary" href="https://www.youtube.com/">YouTube</a>
     <hr>
-    
     <h2>#Lists</h2>
-    <h3>Unordered List Inline without bullet</h3>
-        <ul class="list-non-bullets">
+    <h3>Unordered List</h3>
+        <ul class="list-non-bullet">
             <li class="list-item-inline">Item One</li>
             <li class="list-item-inline">Item two</li>
             <li class="list-item-inline">Item three</li>
+        </ul>
+    <h3>Unordered List </h3>
+        <ul class="list-non-bullet">
+            <li>Item One</li>
+            <li>Item two</li>
+            <li>item three</li>
         </ul>
     <h3>Ordered List</h3>
     <ol>
@@ -55,13 +64,12 @@
        
     </ol>
     <hr>
-    
     <h2>#Nav</h2>
-    <nav class="navigation cantainer">
-        <div class="nav-brand">I am Brand</div>
-        <ul class="list-non-bullets nav-pills">
+    <nav class="navigation container">
+        <div class="nav-brand">iAmBrand</div>
+        <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
-                <a class="link" href="/"><strong>Home</strong></a>
+                <a class="link" href="/">Home</a>
             </li>
             <li class="list-item-inline">
                 <a class="link" href="/">About</a>
@@ -75,32 +83,33 @@
     
     <h2>#Header</h2>
     <header class="hero">
-        <img class="hero-img" src="/img/myphoto.jpg" />
-        <h1 class="hero-heading">I am Sachin and I am <span class="web-devloper">web Devloper</span></h1>
-        
+        <img src="/img/myphoto.jpg" />
+        <h1>Heading inside hero</h1>
+        <img class="hero-img" src="/img/Tanu.jpg" />
+        <h2 class="hero-heading">This is <span class="heading-inverted">Tanu</span>. My hero </h2>
     </header>
     <hr>
     
     <h2>#Section</h2>
-    <section class="sectioned">
+    <section>
         <h3>White section</h3>
-        <p>This will have white background</p>
+        <p>This will have grey background</p>
     </section>
-    <section class="sectioned ow">
+    <section>
         <h3>Off White section</h3>
         <p>This will have grey background</p>
     </section>
     <hr>
     
     <h2>#footer</h2>
-<footer class="footer">
-    <div class="footer-heading">Some small heading inside the footer</div>
+<footer>
+    <div>Some small heading inside the footer</div>
     <ul>
-        <li class="list-item-inline">Social One</li>
-        <li class="list-item-inline">Social two</li>
-        <li class="list-item-inline">Social three</li>
-        <li class="list-item-inline">Social four</li>
-    </ul>
+        <li>Social One</li>
+        <li>Social two</li>
+        <li>Social three</li>
+        <li>Social four</li>
+
 </footer>
 </body>
 </html>
